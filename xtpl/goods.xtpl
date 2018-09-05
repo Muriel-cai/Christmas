@@ -1,0 +1,23 @@
+{{#each(data)}}
+  <div class="onegoods" >
+  	<ul class="goodsul" data-type="{{this.index}}">
+  		{{#each(this.goodsit)}} 	
+  		<li class="goodstabli" >
+  			<a href="{{this.item_url}}" target="_blank">
+  				<div class="shoppic">
+  					<img class="lazy" data-src="{{this.item_pic}}_240x240q95.jpg"/>	
+  				</div>
+  	    	    
+  	    	    <div class="shopinfo">
+  	    	    	<h4>{{this.item_title}}</h4>
+  	    	    	<p>&yen;<span>{{this.item_price}}</span> <i>{{this.item_trade_num}}人付款</i></p>
+  	    	    </div>
+  	    	</a>
+  	    </li>
+  		{{/each}}
+  	</ul>
+  	<div style="clear: both;">
+  		
+  	</div>
+  </div>
+{{/each}}

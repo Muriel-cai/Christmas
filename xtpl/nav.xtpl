@@ -1,0 +1,28 @@
+{{#each(data.txts)}}
+  <div class="navlist">
+    <div class="navp">
+      <p>{{this.txt}}</p>   
+    </div>
+  		
+  	<ul class="navlistul">
+  		{{#each(this.list)}} 	
+  		<li class="navtabli optabli1">
+        {{#if(this.allpic)}}
+        <div class="allpicbox2">
+          <img class="lazy allpic" data-src="{{this.allpic}}_240x240q95.jpg">
+        </div>
+          {{else}}
+          <div class="allinfo">
+            <img class="lazy" data-src="{{this.list_pic}}_240x240q95.jpg"/>
+            <span>{{this.list_name}}</span>
+          </div>
+          {{/if}}
+          
+  	    	
+  	    </li>
+  		{{/each}}
+      <li class="moreli">
+        <p>更多分类</p></li>
+  	</ul>
+  </div>
+{{/each}}

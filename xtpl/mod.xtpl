@@ -1,0 +1,25 @@
+{{#each(data.txts)}}
+  <div class="list">
+  	<div class="showtext">
+  		<p>{{this.txt}}</p>
+  	</div>
+  	
+  	<ul class="listul">
+  		{{#each(this.list)}} 	
+  		<li class="tabli optabli" data-num="">
+        {{#if(this.allpic)}}
+        <div class="allpicbox">
+          <img class="lazy allpic" data-src="{{this.allpic}}_240x240q95.jpg">
+        </div>
+          {{else}}
+          <div class="allinfo1">
+            <img class="lazy" data-src="{{this.list_pic}}_240x240q95.jpg"/>
+            <span>{{this.list_name}}</span>
+          </div>
+          {{/if}}
+  	    </li>
+  		{{/each}}
+  	</ul>
+  </div>
+{{/each}}
+

@@ -1,0 +1,163 @@
+{
+  "title": "数据",
+  "type": "object",
+  "properties": {
+    "moduleinfo": {
+      "type": "object",
+      "title": "皮肤配置",
+      "properties": {
+        "maintitle": {
+          "type": "string",
+          "title": "一级价值点文案"
+        },
+        "bg": {
+          "type": "string",
+          "title": "tab 背景图片"
+        },
+        "sectitle": {
+          "type": "string",
+          "title": "达人经验 标题"
+        },
+        "threetitle": {
+          "type": "string",
+          "title": "商品区块 标题"
+        },
+        "bgpic":{
+          "type": "string",
+          "title": "版头背景图"
+        },
+        "nexturl":{
+          "type": "string",
+          "title": "版头链接到下一个页面的坑位  没有请不要填写"
+        },
+        "urltext":{
+          "type": "string",
+          "title": "版头链接到下一个页面的坑位的文案"
+        },
+        "goldlog":{
+          "type": "string",
+          "title": "黄金令箭标识 (a~z)"
+        }
+      }
+    },
+    "optioninfo": {
+      "type": "object",
+      "title": "选项配置",
+      "properties": {
+        "dynamic": {
+          "type": "string",
+          "title": "false代表禁止动态输出",
+          "default": "false"
+        },
+        "static": {
+          "type": "string",
+          "title": "false代表禁止静态输出",
+          "default": "true"
+        }
+      }
+    },
+    "txts": {
+      "type": "array",
+      "title": "Tab 内容",
+      "items": {
+        "type": "object",
+        "title": "对象",
+        "properties": {
+          "txt": {
+            "type": "string",
+            "title": "文字"
+          },
+          "list": {
+            "type": "array",
+            "title": "品类词",
+            "items": {
+              "type": "object",
+              "title": "这是数组的某个成员",
+              "properties": {
+                "allpic":{
+                  "type": "string",
+                  "title": "整张用图片的图片地址 注：请对应的这个区块都有那个图片 用文案—+图片方案的请勿填此空"
+                },
+                "list_pic": {
+                  "type": "string",
+                  "title": "图片"
+                },
+                "list_name":{
+                  "type": "string",
+                  "title": "品类词"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "title": "这是达人经验区块",
+      "items": {
+        "type": "object",
+        "title": "这是数组的某个成员",
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "这是对应每个二级导航的 例对应家居环境填 1 "
+          },
+          "pic": {
+            "type": "string",
+            "title": "这是图片"
+          },
+          "title": {
+            "type": "string",
+            "title": "这是标题"
+          },
+          "texturl": {
+            "type": "string",
+            "title": "这是链接"
+          }
+        }
+      }
+    },
+    "goods": {
+      "type": "array",
+      "title": "品内词对应的招商数据",
+      "items": {
+        "type": "object",
+        "title": "这是数组的某个成员",
+        "properties": {
+         
+          "goodsit": {
+            "type": "array",
+            "title": "招商数据源   对应有n个品类词 对应n 组数据",
+             "items": {
+              "type": "object",
+              "title": "这是数组的某个成员",
+              "properties": {
+                "item_url": {
+                  "type": "string",
+                  "title": "这是链接"
+                },
+                "item_pic": {
+                  "type": "string",
+                  "title": "这是图片"
+                },
+                "item_title": {
+                  "type": "string",
+                  "title": "这是标题"
+                },
+                "item_price": {
+                  "type": "string",
+                  "title": "这是价格"
+                },
+                "item_trade_num": {
+                  "type": "string",
+                  "title": "这是销量"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

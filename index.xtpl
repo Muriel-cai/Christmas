@@ -1,0 +1,32 @@
+<div class="J_ModContainer">
+  <div class="module-wrap" style="background: {{moduleinfo.bg}}">
+  	<div class="maintitle">
+  		{{moduleinfo.maintitle}} 			   
+    </div>
+    {{#if(moduleinfo.nexturl)}}
+    <a href="{{moduleinfo.nexturl}}" class="nexturl" target="_blank">{{moduleinfo.urltext}}</a>
+
+    {{/if}}
+    <div class="box" style="background: url({{moduleinfo.bgpic}}_q90) no-repeat top center;background-size: 10rem 6.4rem;">
+    	
+    </div>
+    <div class="navbox">
+    	
+    </div>
+    <div class="second">
+    	<h1>{{moduleinfo.sectitle}}</h1>
+    	<div class="secmain">
+    		
+    	</div>
+    </div>
+    <div class="threegoods" data-statu="{{moduleinfo.goldlog}}">
+    	<h1>{{moduleinfo.threetitle}}</h1>
+    	<div class="allgoods">
+    		
+    	</div>
+
+    </div>
+  </div>
+  
+</div>
+<script src="//g.alicdn.com/alilog/mlog/aplus_wap.js"></script>

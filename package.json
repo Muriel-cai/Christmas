@@ -1,0 +1,36 @@
+{
+  "name": "@ali/wb-bycm-hometab-tab-m",
+  "version": "0.0.1",
+  "description": "家庭除螨  TAB 区块",
+  "repository": {
+    "type": "git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "abs-mod"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "author": {
+    "name": "蓝强_博彦"
+  },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "@ali/pi-kimi": "*"
+  },
+  "upx": {
+    "screenshot": "http://g01.alibaba-inc.com/tfscom/TB1O7NchfDH8KJjy1XcXXcpdXXa.tfsprivate.png",
+    "assets": {},
+    "width": [],
+    "type": "mod",
+    "terminalType": "mobile",
+    "tags": [],
+    "guideName": "kimi",
+    "guideId": "4"
+  },
+  "dataEngine": "tce"
+}

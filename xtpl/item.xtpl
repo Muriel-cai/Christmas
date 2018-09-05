@@ -1,0 +1,8 @@
+{{#each(data.items)}}
+ <div class="dara{{this.status}}  tdara">
+	 <a  href="{{this.texturl}}" data-staus="{{this.status}}" target="_blank">
+    	<img class="lazy" data-src="{{this.pic}}_240x240q95.jpg" />
+       <h3>{{this.title}}</h3>
+    </a>
+  </div>
+{{/each}}

@@ -1,0 +1,16 @@
+{
+  "title": "属性",
+  "type": "object",
+  "properties": {
+    "disableAutoRequest":{
+      "type": "boolean",
+      "title": "是否自动发送请求",
+      "default": false
+    },
+    "hd": {
+      "type": "string",
+      "title": "头部",
+      "default": "头部"
+    }
+  }
+}

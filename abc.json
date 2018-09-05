@@ -1,0 +1,21 @@
+{
+  "name": "wb-bycm-hometab-tab-m",
+  "group": "tb-mod",
+  "version": "@BRANCH@",
+  "type": "light",
+  "builder": "@ali/builder-mod",
+  "author": "蓝强_博彦",
+  "options": {
+    "builderReflect": true,
+    "babel": true,
+    "output":{
+      "library":"[name]",
+      "libraryTarget":"window"
+    }
+  },
+  "info": {
+    "extraLib": "null",
+    "platform": ["mobile"],
+    "project": "mod"
+  }
+}
